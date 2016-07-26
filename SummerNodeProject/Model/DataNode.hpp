@@ -16,6 +16,7 @@ template <class Type>
 class DataNode
 {
 private:
+    //two constructors
     Type nodeData;
     DataNode * nodePointer;
 public:

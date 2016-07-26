@@ -13,7 +13,7 @@
 class NodeController
 {
 private:
-    tryNodes();
+    void tryNodes();
 public:
     void start();
 };

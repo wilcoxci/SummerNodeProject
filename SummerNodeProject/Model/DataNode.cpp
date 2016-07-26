@@ -43,7 +43,7 @@ DataNode<Type> * DataNode<Type> :: getNodePointer()
 template <class Type>
 void DataNode<Type> :: setNodeData(Type nodeData)
 {
-    this ->nodeData = nodeData;
+    this->nodeData = nodeData;
 }
 
 template <class Type>

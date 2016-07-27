@@ -59,12 +59,17 @@ Type SummerArray<Type> :: getFirst()
 }
 template <class Type>
 Type SummerArray<Type> :: getLast()
+{ }
+template <class Type>
+    void SummerArray<Type> :: setAtIndex(int index, Type data)
 {
-    return end->getNodeData();
+    assert(index >= 0 && index < length);
+    
+    DataNode<Type> * indexPointer = front;
+    for(int position = 0; position < index; position++)
+    {
+        indexPointer = indexPointer->getNodePointer();
+    }
+    
+    indexPointer->setNodeData(data);
 }
-
-
-
-
-
-

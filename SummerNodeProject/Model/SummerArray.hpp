@@ -24,7 +24,7 @@ public:
     SummerArray(int length);
     
     Type getFromIndex(int index);
-    Type getFrist();
+    Type getFirst();
     Type getLast();
     void setAtIndex(int index, Type data);
     

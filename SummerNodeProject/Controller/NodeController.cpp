@@ -13,11 +13,11 @@
 #include <iostream>
 
 using namespace std;
+
 void NodeController :: tryNodes()
 {
     DataNode<int> numberNode;
     DataNode<string> wordNode;
-    
     cout << "before" << endl;
     cout << numberNode.getNodeData() << endl;
     cout << "after" << endl;
@@ -25,7 +25,12 @@ void NodeController :: tryNodes()
     cout << numberNode.getNodeData() << endl;
 }
 
-void NodeController :: start()
+void NodeController :: tryArray()
 {
-    tryNodes();
+    SummerArray<int> testAray(3);
+}
+    void NodeController :: start()
+{
+
+tryArray();
 }

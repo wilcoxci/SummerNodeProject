@@ -31,3 +31,31 @@ SummerArray<Type> :: SummerArray(int length)
     }
     
 }
+
+template <class Type>
+Type SummerArray<Type> :: getFromIndex (int index)
+{
+    assert(index >= 0);
+    assert(index < length);
+    
+    Type retrievedValue;
+    
+    DataNode<Type> * indexPointer = front;
+    for (int position = 0; position < index;
+        position++)
+    {
+        indexPointer = indexPointer->getNodePointer ();
+    }
+    
+    retrievedValue = indexPointer->getNodeData();
+    
+    return retrievedValue;
+}
+
+
+
+
+
+
+
+

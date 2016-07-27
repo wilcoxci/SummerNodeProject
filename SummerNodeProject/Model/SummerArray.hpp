@@ -31,6 +31,7 @@ public:
     void sort();
     void resize(int newSize);
     int getUnusedNodes();
+    int getLength();
 };
 
 #endif /* SummerArray_hpp */

@@ -7,10 +7,13 @@
 //
 
 #include "SummerArray.hpp"
+#include <assert.h>
 
 template <class Type>
 SummerArray<Type> :: SummerArray(int length)
 {
+    assert(length > 0);
+    
     this->length = length;
     modifiedNodes = new bool[length];
     front = nullptr;

@@ -12,7 +12,6 @@
 #include <stdio.h>
 
 template <class Type>
-
 class DataNode
 {
 private:

@@ -21,12 +21,14 @@ private:
     BinaryTreeNode<Type> * parent;
     
 public:
-    //getters and setters
-    BinaryTreeNode<Type>();
+    //2 constructors
+    BinaryTreeNode();
     BinaryTreeNode<Type>(Type data);
-    BinaryTreeNode<Type> * getLeftChild;
-    BinaryTreeNode<Type> * getRightChild;
-    BinaryTreeNode<Type> * getParent;
+    //3 getters
+    BinaryTreeNode<Type> * getLeftChild();
+    BinaryTreeNode<Type> * getRightChild();
+    BinaryTreeNode<Type> * getParent();
+    //3 setters
     void setRightChild(BinaryTreeNode<Type> * rightChild);
     void setLeftChild(BinaryTreeNode<Type> * leftChild);
     void setParent(BinaryTreeNode<Type> * Parent);

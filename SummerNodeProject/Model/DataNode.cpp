@@ -20,8 +20,8 @@ DataNode<Type> :: DataNode()
 template <class Type>
 DataNode<Type> :: DataNode(Type nodeData)
 {
-    this->nodeDatat = nodeData;
-    this->nodeinter = nullptr;
+    this->nodeData = nodeData;
+    this->nodePointer = nullptr;
 }
 //End constructors
 

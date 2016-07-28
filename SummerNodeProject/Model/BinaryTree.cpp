@@ -21,24 +21,24 @@ void BinaryTree<Type> :: insert(Type data)
 {
     BinaryTreeNode<Type> * insertedNode = new BinaryTreeNode<Type>(data);
     
-    insert(insertedNode, root);
+    root = insert(insertedNode, root);
 }
-
 template <class Type>
-void BinaryTree<Type> :: insert(BinaryTreeNode<Type> * insertedNode, BinaryTreeNode<Type> * currentRootNode)
+BinaryTreeNode<Type> * BinaryTree<Type> :: insert(BinaryTreeNode<Type> * insertedNode, BinaryTreeNode<Type> * currentRootNode)
 {
     if(currentRootNode == nullptr)
     {
-        currentRootNode = insertedNode;
+        return insertedNode;
     }
-    else if (insertedNode->getNodeData() <currentRootNode->getNodeData())
+    else if (insertedNode->getNodeData() < currentRootNode->getNodeData())
     {
-        insert(insertedNode, currentRootNode-> getLeftChild());
+        currentRootNode->setLeftChild(insert(insertedNode, currentRootNode-> getLeftChild()));
     }
     else if(insertedNode->getNodeData() > currentRootNode->getNodeData())
     {
-        insert(insertedNode, currentRootNode-> getRightChild());
+        currentRootNode->setRightChild(insert(insertedNode, currentRootNode-> getRightChild()));
     }
+    return currentRootNode;
 }
 
 

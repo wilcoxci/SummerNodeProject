@@ -17,6 +17,7 @@ class BinaryTree
 {
 private:
     BinaryTreeNode<Type> * root;
+    void insert(BinaryTreeNode<Type> * insertedNode, BinaryTreeNode<Type> * currentRootNode);
 public:
     BinaryTree();
     void insert(Type data);
@@ -24,6 +25,7 @@ public:
     void preOrderTraversal();
     void postOrderTraversal();
     int calculateSize();
-    bool remoe(Type data);
+    bool remove(Type data);
 };
+
 #endif /* BinaryTree_hpp */

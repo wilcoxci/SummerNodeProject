@@ -163,6 +163,5 @@ bool SummerList<Type> :: contains(Type data)
         containsPointer = containsPointer->getNodePointer();
     }
     
-    
     return isInList;
 }

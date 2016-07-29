@@ -47,3 +47,12 @@ void HashTable<Type> ::  add(Type data)
     indexPointer->setStuffed(true);
 }
 
+template <class Type>
+long HashTable<Type> :: findPosition(Type data)
+{
+    long insertedPosition;
+    
+    
+    return insertedPosition;
+}
+

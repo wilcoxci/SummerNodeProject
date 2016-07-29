@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A425877C1D4BA61E004B4585 /* HashTable2016.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A425877A1D4BA61E004B4585 /* HashTable2016.cpp */; };
+		A425877F1D4BB19C004B4585 /* HashNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A425877D1D4BB19C004B4585 /* HashNode.cpp */; };
 		A47875F81D47FE0D0026692E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A47875F71D47FE0D0026692E /* main.cpp */; };
 		A47876001D47FFAB0026692E /* DataNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A47875FE1D47FFAB0026692E /* DataNode.cpp */; };
 		A47876041D480C980026692E /* NodeController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A47876021D480C980026692E /* NodeController.cpp */; };
@@ -29,6 +31,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A425877A1D4BA61E004B4585 /* HashTable2016.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HashTable2016.cpp; path = Model/HashTable2016.cpp; sourceTree = "<group>"; };
+		A425877B1D4BA61E004B4585 /* HashTable2016.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = HashTable2016.hpp; path = Model/HashTable2016.hpp; sourceTree = "<group>"; };
+		A425877D1D4BB19C004B4585 /* HashNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HashNode.cpp; path = Model/HashNode.cpp; sourceTree = "<group>"; };
+		A425877E1D4BB19C004B4585 /* HashNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = HashNode.hpp; path = Model/HashNode.hpp; sourceTree = "<group>"; };
 		A47875F41D47FE0D0026692E /* SummerNodeProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SummerNodeProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47875F71D47FE0D0026692E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A47875FE1D47FFAB0026692E /* DataNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataNode.cpp; path = Model/DataNode.cpp; sourceTree = "<group>"; };
@@ -95,6 +101,10 @@
 				A4951F891D4A543D0084352C /* BinaryTreeNode.hpp */,
 				A4951F8C1D4A69620084352C /* BinaryTree.cpp */,
 				A4951F8D1D4A69620084352C /* BinaryTree.hpp */,
+				A425877A1D4BA61E004B4585 /* HashTable2016.cpp */,
+				A425877B1D4BA61E004B4585 /* HashTable2016.hpp */,
+				A425877D1D4BB19C004B4585 /* HashNode.cpp */,
+				A425877E1D4BB19C004B4585 /* HashNode.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -169,8 +179,10 @@
 				A4951F8A1D4A543D0084352C /* BinaryTreeNode.cpp in Sources */,
 				A4951F8E1D4A69620084352C /* BinaryTree.cpp in Sources */,
 				A47875F81D47FE0D0026692E /* main.cpp in Sources */,
+				A425877F1D4BB19C004B4585 /* HashNode.cpp in Sources */,
 				A4C486BA1D4944B80024C246 /* SummerList.cpp in Sources */,
 				A47876001D47FFAB0026692E /* DataNode.cpp in Sources */,
+				A425877C1D4BA61E004B4585 /* HashTable2016.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

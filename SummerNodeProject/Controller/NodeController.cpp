@@ -10,6 +10,7 @@
 #include "../Model/DataNode.cpp"
 #include "../Model/SummerArray.cpp"
 #include "../Model/BinaryTree.cpp"
+#include "../Model/HashTable2016.cpp"
 #include <string>
 #include <iostream>
 
@@ -62,7 +63,20 @@ void NodeController :: tryTree()
     cout << endl;
 }
 
+
+void NodeController :: tryHash()
+{
+    HashTable<int> numbersInHash;
+    numbersInHash.add(123);
+    numbersInHash.add(342);
+    numbersInHash.add(123423);
+    numbersInHash.add(123413123);
+    numbersInHash.add(-231);
+    numbersInHash.add(123);
+    numbersInHash.add(142342352);
+}
+
 void NodeController :: start()
 {
-    tryTree();
+    tryHash();
 }
